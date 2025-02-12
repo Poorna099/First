@@ -1,0 +1,169 @@
+/* src/Dashboard.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 50, 243);
+    padding: 10px;
+    color: white;
+  }
+  
+  .navbar-left {
+    font-size: 24px;
+  }
+  
+  .navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .search-container input {
+    padding: 10%; 
+    width: 180%;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none; 
+    border: none; 
+    color: rgb(5, 5, 78); 
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: -80%;
+  }
+ 
+
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-dropdown {
+    position: absolute;
+    top: 10%; 
+    left: 10px;
+    background: white;
+    border: 1px solid #0e0707;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    min-width: 180px;
+  }
+  
+  .menu-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #0e0707;
+    size:0cqb ;
+  }
+  
+  .menu-dropdown li {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .menu-dropdown li:hover {
+    background-color: #b0b0b9;
+  }
+  
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+  }
+  
+  .product-card {
+    width: 25%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 50%; /* Ensure image fills the card width */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  /* .product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-image {
+    width: 20%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  } */
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
